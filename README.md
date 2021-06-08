@@ -1,16 +1,9 @@
 # Graph Pattern Matching Challenge
-## Compile and Execute 
-### main program
+## Execute 
 ```
-mkdir build
-cd build
-cmake ..
-make
-./main/program <data graph file> <query graph file> <candidate set file>
+python main.py --data_path <data graph path> --query_path <query graph path> --cs_path <candidate set path>
 ```
-### executable program that outputs a candidate set
+for example,
 ```
-./executable/filter_vertices <data graph file> <query graph file>
+python main.py --data_path data/lcc_hprd.igraph --query_path query/lcc_hprd_n1.igraph --cs_path candidate_set/lcc_hprd_n1.cs
 ```
-### References
-[1] Myoungji Han, Hyunjoon Kim, Geonmo Gu, Kunsoo Park, and Wook-Shin Han. 2019. Efficient Subgraph Matching: Harmonizing Dynamic Programming, Adaptive Matching Order, and Failing Set Together. In Proceedings of the 2019 International Conference on Management of Data (SIGMOD '19). Association for Computing Machinery, New York, NY, USA, 1429–1446. DOI:https://doi.org/10.1145/3299869.3319880
